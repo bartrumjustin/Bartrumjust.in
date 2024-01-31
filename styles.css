@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --ddarkblue: #031b28;
+    --darkblue: #0b2838;
+    --blue: #083248;
+    --red: #8c0e0f;
+    --gold: #e89c31;
+    --lightgold: #dba858;
+    --sac: 'sacramento';
+    --abore: 'aboreto';
+    --huge: 10rem;
+    --large: 5rem;
+    --med: 3rem;
+    --sm: 1.5rem;
+
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    min-width: 1440px;
+    overflow-x: hiddn;
+}
+/* 1440px laptop and bigger */
+a:link, :visited{
+    text-decoration: none;
+    color: var(--lightgold)
+}
+.fixed{
+    position: fixed;
+    z-index: 2;
+}
+.box-nav{
+    min-width: 1440px;
+    width: 100vw;
+    height: var(--large);
+    background-color: var(--ddarkblue);
+    
+}
+.list-items{
+    font-family: var(--abore);
+    color: var(--lightgold);
+    list-style-type: none;
+    float: right;
+    /*background-color: aqua;*/
+    padding: 1.75rem 0 0 0 
+}
+li:first-of-type{
+    
+    position: absolute;
+    top: 0;
+    left: 25px;
+    display: inline;
+    color: var(--brightgold);
+    text-shadow: 0 0 3px var(--gold);
+    font-size: var(--large);
+    font-family: var(--sac);
+}
+li:not(:first-of-type){
+    
+    /*background-color: azure;*/
+    display: inline;
+    margin: 0 10px 0 10px;
+    font-size: var(--sm);
+    font-family: var(--abore);
+}
+li:last-of-type{
+    padding-right: 25px;
+}
+.dropdown{
+    cursor: pointer;
+}
+.drop-cont{
+    position: absolute;
+    top: 3.5rem;
+    right: 163px;
+    display: none;
+}
+.proj1{
+    position: relative;
+    background-color: var(--blue);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    color: var(--lightgold);
+    font-size: 2rem;
+    text-decoration: none;
+}
+.dropdown:hover .drop-cont {
+    display: block;
+}
+.about{
+    padding-top: 5rem;
+    background-color: var(--blue);
+    height: 800px;
+    width: 100%;
+    
+    
+
+}
+.photo-cont{
+    /*background-color: aqua;*/
+    width: 700px;
+    height: 800px;
+    display: inline-grid;
+    grid-template-columns: 1fr;
+
+}
+.bg{
+    /*background-color: aqua;*/
+    height: 100%;
+    width: 100%;
+    filter: drop-shadow(20px 20px 15px #1372a4);
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+.photo{
+    margin-left: 3rem;
+    height: auto;
+    width: 700px;
+    filter:drop-shadow(5px 5px 5px #1372a4);
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+.text{
+    /*background-color: aqua;*/
+    width: 690px;
+    height: 800px;
+    margin-left: 750px;
+    margin-top: -800px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.righthalf{
+    /*background-color: aqua;*/
+    z-index: 1;
+    padding: 0 10px 0 10px;
+    word-wrap: break-word;
+    width: 600px;
+    height: 800px;
+    font-size: var(--med);
+    color: white;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    
+    
+}
+.invert{
+    /*background-color: aqua;*/
+    z-index: 1;
+    backdrop-filter: invert(100%);
+    height: 700px;
+    width: 600px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 59%);
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+.overflowedge{
+    overflow: hidden;
+}
+.edge{
+    width: 100.8%;
+    height: 10rem;
+    background-color: var(--blue);
+    position: relative;
+    left: -.5rem;
+    bottom: 7vh;
+    transform: rotate(-3deg);
+    box-shadow: 0px 20px 15px;
+    z-index: 1;
+}
+.technology{
+    margin-top: -150px;
+    display: grid;
+    grid-template-columns: 1fr;
+    
+    
+}
+.office{
+    width: 100%;
+    height: 600px;
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+.office1{
+    /*background-color: aqua;*/
+    margin-left: 69px;
+    transform: translateY(106px);
+    z-index: 1;
+    width: 22.8%;
+    height: 374px;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    
+        
+}
+
+
+.blur-cont{
+    margin-left: 20%;
+    margin-top: 13%;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    width: 60%;
+    height: 300px;
+    /*background-color: aqua;*/
+    backdrop-filter: blur(10px);
+    background-color: rgb(0, 0, 0, .5);
+    border-radius: 20px;
+    z-index: 2;
+    box-shadow: 10px 20px 20px #f222ff;
+    
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    
+    background-color: rgba(0, 0, 0, 0.45);
+    color: #f222ff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    width: 120px;
+    margin-left: -60px;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+.grid-cont{
+    margin-top: 4%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-items: center;
+    row-gap: 5rem;
+}
