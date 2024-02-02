@@ -70,8 +70,7 @@ a:link,
     display: none;
 }
 .about{
-    min-height: 620px;
-    min-height: 600px;
+    min-height: 100vh;
     max-height: 900px;
     padding-top: 5%;
 }
@@ -109,11 +108,11 @@ a:link,
     color: gray
 }
 .name-760{
-    height: auto;
+    min-height: auto;
     width: 100vw;
     text-align: center;
     text-wrap: nowrap;
-    font-size: var(--huge);
+    font-size: 17vw;
     font-family: var(--sac);
     color: var(--lightgold);
     transform: rotate(-15deg);
@@ -130,8 +129,9 @@ a:link,
 .blur-cont{
     padding-top: 4%;
     padding-bottom: 2%;
+    min-height: 25vh;
     max-height: 65%;
-    max-width: 800px;
+    width: 65vw;
     border: solid var(--red) 10px;
     float: right;
     margin-right: 5%;
@@ -148,9 +148,11 @@ a:link,
 }
 .grid-cont{
     display: grid;
-    grid-template-columns: 100px 100px 100px 100px 100px ;
+    grid-template-columns: 8vw 8vw 8vw 8vw 8vw ;
     text-align: center;
     color: var(--gold);
     font-size: 1.25rem;
+    row-gap: 10vh;
+    column-gap: 5vw;
     
 }
